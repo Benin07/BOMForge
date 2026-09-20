@@ -35,6 +35,7 @@ The repository currently contains a polished, self-contained browser prototype a
 - At-risk and VLSI filters.
 - CSV export for estimate handoffs.
 - UI sized around a 10,000+ node estimate workflow.
+- Responsive mobile navigation keeps workspace selection and primary tabs available on small screens.
 
 ### Data model foundation
 
@@ -77,6 +78,7 @@ The repository currently contains a polished, self-contained browser prototype a
 .
 ├── index.html       # Browser prototype entry point
 ├── styles.css       # Responsive BOMForge visual system
+├── mobile.css       # Small-screen navigation and layout overrides
 ├── app.js           # Dashboard, BOM filtering, search, export, and UI state
 ├── schema.sql       # PostgreSQL 15+ recursive BOM schema
 └── README.md        # Project documentation
