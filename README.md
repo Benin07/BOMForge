@@ -93,6 +93,22 @@ No build step is required for the current prototype.
 
 For a local server, use any static file server and open `/index.html` from the project directory.
 
+## Deploy to Vercel
+
+The repository includes a root-level `index.html` and `vercel.json`, so it can be deployed as a static site without a build step.
+
+### Recommended GitHub import
+
+1. Upload the contents of this project to the repository root, including `index.html`, `styles.css`, `app.js`, and `vercel.json`.
+2. In Vercel, import the GitHub repository.
+3. Leave **Root Directory** set to `.`.
+4. Select **Other** or **No Framework**.
+5. Leave **Build Command** empty.
+6. Leave **Output Directory** as `.`.
+7. Deploy and open the generated root URL.
+
+If you keep the files inside `outputs/bomforge` instead, set Vercel's **Root Directory** to `outputs/bomforge` before deploying. Do not deploy the parent folder with the root directory pointing somewhere that does not contain `index.html`.
+
 ## PostgreSQL schema
 
 `schema.sql` targets PostgreSQL 15+ and enables the `pgcrypto` and `ltree` extensions.
@@ -156,4 +172,3 @@ The current release is a UI and data-model foundation intended for product explo
 ## License
 
 Choose and add a license before public distribution. A permissive option such as MIT is a common fit for an open-source starter project.
-
